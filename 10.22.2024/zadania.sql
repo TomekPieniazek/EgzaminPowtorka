@@ -8,9 +8,9 @@ SELECT *
 FROM Restaurant_Table 
 WHERE id IN (SELECT restaurant_table_id FROM Reservation) AND restaurant_id = 1;
 
-SELECT e.first_name, e.last_name, ep.name AS position_name, r.name AS restaurant_name
-FROM Employee e
-WHERE id IN (SELECT employee_id FROM Employment);
+-- SELECT e.first_name, e.last_name AS position_name, r.name AS restaurant_name
+-- FROM Employee e
+-- WHERE id IN (SELECT employee_id FROM Employment);
 
 SELECT * 
 FROM Employee 
