@@ -1,0 +1,63 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.goro {
+    display: flex;
+}
+
+.blok_gorny_lewy {
+    background-color: seagreen;
+    color: white;
+    height: 260px;
+    width: 75%;
+    font-size: 160%;
+    line-height: 150px;
+    padding: 20px;
+}
+
+.blok_gorny_prawy {
+    background-color: seagreen;
+    color: white;
+    height: 260px;
+    width: 25%;
+    font-size: 160%;
+    line-height: 150px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glowny {
+    background-color: mintcream;
+    padding: 80px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: seagreen;
+    color: white;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+input, button {
+    margin-bottom: 20px;
+}
+
+img {
+    box-shadow: 15px 10px 10px dimgray;
+}
+
+a {
+    text-decoration: none;
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px;
+}
