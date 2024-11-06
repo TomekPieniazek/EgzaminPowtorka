@@ -11,7 +11,7 @@
         $data = htmlspecialchars($_POST["data"]);
         $sedzia = htmlspecialchars($_POST["sedzia"]);
 
-        $conn->query("INSERT INTO zawody_wedkarskie (Karty_wedkarskie_id, Lowisko_id, data_zawodow, sedzia) VALUES (0, $lowisko, $data, $sedzia)");
+        $conn->execute_query("INSERT INTO zawody_wedkarskie (Karty_wedkarskie_id, Lowisko_id, data_zawodow, sedzia) VALUES (0, $lowisko, $data, $sedzia);");
         $conn->close();
     }
 
