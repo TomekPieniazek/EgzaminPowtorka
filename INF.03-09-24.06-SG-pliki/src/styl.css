@@ -1,0 +1,65 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+header, footer {
+    background-color: maroon;
+    text-align: center;
+    padding: 2px;
+}
+
+.tmp {
+    background-color: lightsalmon;
+    height: 527px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lewy, .prawa {
+    width: 15%;
+}
+
+.srodek {
+    width: 70%;
+}
+
+.srodek img {
+    display: block;
+    margin: auto;
+    padding: 45px;
+    scale: 100%;
+}
+
+.srodek img:hover {
+    scale: 120%;
+    transition: 5s;
+}
+
+.galeria {
+    background-color: maroon;
+    height: 70px;
+}
+
+.galeria img {
+    height: 70px;
+    animation-name: animacja;
+    animation-duration: 4s;
+}
+
+button {
+    background-color: lightsalmon;
+    color: maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+
+@keyframes animacja {
+    from {padding-left: 50px;}
+    to {padding-left: 0px;}
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro turystyczne</title>
+    <link href="./styl.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Zwiedzamy Polskę</h1>
+    </header>
+    <div class="tmp">
+        <div class="lewy"><button onclick="poprzednia()"><</button></div>
+        <div class="srodek">
+            <img class='main_obraz' src="../pliki/1.jpg" alt="Aktywne zdjęcie">
+        </div>
+        <div class="prawa"><button onclick="nastepna()">></button></div>
+    </div>
+    <div class="galeria">
+        <img src="../pliki/1.jpg" alt="Gdańsk">
+        <img src="../pliki/2.jpg" alt="Kraków">
+        <img src="../pliki/3.jpg" alt="Niedzica">
+        <img src="../pliki/4.jpg" alt="Pieniny">
+        <img src="../pliki/5.jpg" alt="Szklarska Poręba">
+        <img src="../pliki/6.jpg" alt="Tatry">
+        <img src="../pliki/7.jpg" alt="Wrocław">
+    </div>
+    <footer>
+        <h3>Autorem Galerii jest: Ja</h3>
+        <p>111111111</p>
+        <a href="http://pixabay.com">Więcej zdjęć</a>
+    </footer>
+    <script>
+        let current_picture = document.getElementsByClassName('main_obraz')[0];
+        let tablica = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg'];
+        let pointer = 0;
+
+        function nastepna() {
+            if(pointer == tablica.length - 1){
+                pointer=0;
+            } else {
+                pointer+=1;
+            }
+            updatePhotoBasedOnPointer();
+        };
+
+        function poprzednia() {
+            if (pointer == 0) {
+                pointer = tablica.length - 1;
+            } else {
+                pointer-=1;
+            }
+            updatePhotoBasedOnPointer();
+        };
+
+        function updatePhotoBasedOnPointer() {
+            current_picture.src = `../pliki/${tablica[pointer]}`;
+        };
+    </script>
+</body>
+</html>

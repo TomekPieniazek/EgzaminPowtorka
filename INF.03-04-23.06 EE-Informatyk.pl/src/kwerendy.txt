@@ -1,0 +1,5 @@
+
+1. SELECT imie, nazwisko from autorzy GROUP By nazwisko;
+2. INSERT INTO czytelnicy (imie, nazwisko, kod) VALUES ("EWA", "KOWALSKA", "145321");
+3. SELECT tytul from ksiazki as ks JOIN kategorie ka ON ka.id = ks.id_kategoria where ka.nazwa = "dramat";
+4. SELECT tytul from ksiazki as ks JOIN wypozyczenia as w ON ks.id = w.id_ksiazka JOIN czytelnicy as cz ON w.id_czytelnik = cz.id; 
