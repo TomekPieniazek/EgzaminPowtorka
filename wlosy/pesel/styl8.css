@@ -1,0 +1,66 @@
+* {
+    font-family: garamond;
+    text-align: center;
+}
+
+.lewy {
+    width: 72%;
+}
+
+.pierwszy {
+    background-color: #795548;
+    font-size: 170%;
+    height: auto;
+}
+
+.drugi {
+    height: 400px;
+}
+
+.prawe {
+    background-color: #BCAAA4;
+    color: #795548;
+    height: 400px;
+    width: 28%;
+}
+
+footer {
+    background-color: #795548;
+    color: white;
+    padding: 20px;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border: solid 1px #795548;
+}
+
+tr :hover {
+    background-color: sienna;
+    color: white;
+}
+
+.main {
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+
+h4 {
+    font-size: 200%;
+}
+
+img {
+    padding: 20px;
+    border-radius: 40px;
+}
+
+a {
+    color: white;
+}
+
+input[type="radio"] {
+    margin: 7px;
+}

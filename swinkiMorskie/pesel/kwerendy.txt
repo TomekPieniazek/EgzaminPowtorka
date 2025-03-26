@@ -1,0 +1,4 @@
+SELECT imie, miot FROM swinki WHERE data_ur BETWEEN '2022-07-01' AND '2022-07-31';
+SELECT DISTINCT s.data_ur, s.miot, r.rasa FROM swinki as s JOIN rasy as r ON s.rasy_id = r.id;
+SELECT DISTINCT s.imie, s.cena, s.opis, r.rasa FROM swinki as s JOIN rasy as r ON s.rasy_id = r.id where s.rasy_id = 1;
+SELECT rasa from rasy;

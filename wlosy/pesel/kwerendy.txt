@@ -1,0 +1,4 @@
+SELECT imie, nazwisko, stanowisko from kadra where stanowisko = 'fryzjer' OR stanowisko = 'stylista';
+SELECT COUNT(nazwa) as 'Ilosc uslug', MAX(cena) as 'Najwyzsza cena' FROM uslugi;
+SELECT u.nazwa, k.imie FROM uslugi as u JOIN kadra as k ON u.kadra_id = k.id;
+ALTER TABLE uslugi ADD COLUMN opinia VARCHAR(255);
